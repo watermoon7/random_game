@@ -1,11 +1,10 @@
-class GameState:
+class State:
     def __init__(self, master):
         self.master = master
         self.cell_size = master.cell_size
         self.width = master.width
         self.height = master.height
         self.screen = master.screen
-
 
     def start(self):
         pass
@@ -21,4 +20,3 @@ class GameState:
 
     def render(self, screen):
         pass
-

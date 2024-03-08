@@ -2,10 +2,10 @@ import pygame, sys
 import numpy as np
 from utils import add
 from GUI.button import Button
-from states.gamestate import GameState
+from states.state import State
 
 
-class Pause(GameState):
+class Pause(State):
     def __init__(self, master):
         super().__init__(master)
         self.master = master

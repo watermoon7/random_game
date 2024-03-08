@@ -13,7 +13,7 @@ class RandomGame:
         self.height = height
         self.screen_rect = pygame.Rect((0, 0, width, height))
         self.screen = pygame.display.set_mode((width, height), flags=pygame.RESIZABLE)
-        self.cell_size = 10
+        self.cell_size = 30
         self.running = True
 
         self.clock = pygame.time.Clock()
@@ -21,7 +21,7 @@ class RandomGame:
 
         self.states = {
             "main_menu": main_menu.MainMenu(self),
-            "game": game.GameLoop(self),
+            "game": game.Loop(self),
             "pause": pause.Pause(self),
         }
         self.current_state = self.states["main_menu"]

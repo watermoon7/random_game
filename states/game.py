@@ -4,13 +4,17 @@ from player import Player
 from world.save import save
 from world.load import load
 from world.block import Block
-from states.gamestate import GameState
+from states.state import State
 
 
-class GameLoop(GameState):
+class Loop(State):
     def __init__(self, master):
         super().__init__(master)
         self.background_color = pygame.Color('lightskyblue1')
+        '''self.state = {
+            "chunks": {},
+            "player": Player(self)
+        }'''
         self.chunks = {}
         self.loaded_chunks = []
 

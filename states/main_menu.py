@@ -1,7 +1,7 @@
 import pygame, sys
 import numpy as np
 from player import Player
-from states.gamestate import GameState
+from states.state import State
 from GUI.button import Button
 from GUI.text_input import TextInput
 from GUI.scrollable_container import ScrollableContainer
@@ -10,7 +10,7 @@ from world.generate import generate_chunk
 from world.save import save
 
 
-class MainMenu(GameState):
+class MainMenu(State):
     def __init__(self, master):
         super().__init__(master)
         self.master = master
