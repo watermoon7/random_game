@@ -63,7 +63,7 @@ class MainMenu(GameState):
             )
         ]
         world_buttons = ScrollableContainer(self.grid_cell_size, self.grid_cell_width * 15,
-                                            self.grid_cell_height * 10, self.grid_cell_height, separation=10)
+                                            self.grid_cell_height * 10, self.grid_cell_height, separation=2)
         for i, name in enumerate(self.world_names):
             world_buttons.add_item(
                 Button(

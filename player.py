@@ -94,14 +94,14 @@ class Player(pygame.sprite.Sprite):
             "inventory": self.inventory,
         }
 
-    def load(self, d):
-        self.pos = np.array(d["pos"])
-        self.velocity = np.array(d["velocity"])
-        self.acceleration = np.array(d["acceleration"])
-        self.jump = d["jump"]
-        self.grounded = d["grounded"]
-        self.speed = d["speed"]
-        self.inventory = d["inventory"]
+    def load(self, data):
+        self.pos = np.array(data["pos"])
+        self.velocity = np.array(data["velocity"])
+        self.acceleration = np.array(data["acceleration"])
+        self.jump = data["jump"]
+        self.grounded = data["grounded"]
+        self.speed = data["speed"]
+        self.inventory = data["inventory"]
 
     def reset(self):
         self.pos = np.array([0, 0], dtype=float)
