@@ -12,7 +12,7 @@ class Button(TextWidget):
     def __init__(self, pos: Vector, width: int, height: int, text: str = None, font_size: int = 20,
                  command=None, args: List or None = None, toggle: bool = False, line_length: int = 30,
                  default_color: Color = None, toggle_color: Color = None, toggled: bool = False,
-                 do_hover_color: bool = True, do_pressed_color: bool = True, round_edges: int = 15,
+                 do_hover_color: bool = True, do_pressed_color: bool = True, round_edges: int = 0,
                  center_text: bool = True, text_color: Color = (255, 255, 255)) -> None:
         super().__init__(pos, width, height, text, font_size, center_text, line_length, text_color)
         self.command = command

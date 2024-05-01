@@ -57,12 +57,12 @@ class ScrollableContainer(WidgetContainer):
         """Handles the scrolling of the widgets"""
         self.scroll_offset += direction * 12
         self.scroll_offset = min(self.scroll_offset, 0)
-        max_offset = -(len(self.items) * (self.item_height + self.separation)) + self.height
+        max_offset = self.height - (len(self.items) * self.item_height + (len(self.items) - 2) * self.separation)
         self.scroll_offset = max(self.scroll_offset, max_offset)
 
         for i, item in enumerate(self.items):
             item_pos = (
                 self.pos[0] + self.margin[0],
-                self.pos[1] + i * (self.item_height + self.separation - 1) + self.scroll_offset + self.margin[1]
+                self.pos[1] + i * self.item_height + (i - 1) * self.separation + self.scroll_offset + self.margin[1]
             )
             item.set_pos(item_pos)
