@@ -24,6 +24,18 @@ Infinite world:
 
 ## Aspects of the game
 
+## World generation
+- chests
+- underground structures
+- big trees
+- temples
+- small trees
+- medium trees
+- big trees
+- trees
+- foiliage (grass)
+- boreal trees
+
 ### Items
 - Armour
 - Weapons
@@ -35,6 +47,7 @@ Infinite world:
 
 ### Enemies
 - Zombie
+- Living chairs
 
 ### Bosses
 - Floating eye (:D)
