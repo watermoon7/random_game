@@ -1,4 +1,7 @@
-# TODO
+# Random Game
+Random game is an attempt at recreating Terraria in Python using the Pygame module.
+
+## TODO
 
 Text input
 - allow aligning of the text
@@ -18,3 +21,20 @@ Infinite world:
 - generate n+1 layers of blocks outside the chunk
 - smooth the chunk (including outer layers) n times
 - then shave off the outer layers of the chunk
+
+## Aspects of the game
+
+### Items
+- Armour
+- Weapons
+- Tools
+- Accessories
+- Potions
+- Blocks
+- Materials
+
+### Enemies
+- Zombie
+
+### Bosses
+- Floating eye (:D)
